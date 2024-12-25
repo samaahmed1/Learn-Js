@@ -289,7 +289,7 @@ while (numberFromUser <= 10) {
 }
 
 /*
-Write a program that asks the user to input a number, then calculates the sum of even 
+Write a program that asks the user to input a number, then calculates the sum of even
 numbers starting from that number up to 30.
  */
 
@@ -308,7 +308,7 @@ console.log(sum);
 /**********************************/
 
 /*
-Write a program that asks the user to input a word and continues asking for the word until 
+Write a program that asks the user to input a word and continues asking for the word until
 the user enters the word "quit". After each input, print the entered word.
  */
 
@@ -318,7 +318,7 @@ do {
 } while (word !== "quit");
 
 /*
-Write a program that starts with the number 5, checks if the number is odd, and prints it. After 
+Write a program that starts with the number 5, checks if the number is odd, and prints it. After
 that, increment the number by 1 and terminate the program after executing the process once.
  */
 
@@ -329,3 +329,96 @@ do {
   }
   i++;
 } while (i < 5);
+
+/**********************************/
+// Function
+/**********************************/
+
+/*
+function that takes a number and returns its square
+number => number * number
+ */
+
+function squareNumber(number) {
+  return number * number;
+}
+console.log(squareNumber(20));
+
+/*
+Write a function that takes length and width and returns the area
+area => length * width
+ */
+
+function rectangleArea(length, width) {
+  return length * width;
+}
+console.log(rectangleArea(10, 5));
+
+/*
+Write a function that takes a person's name and age and prints a message containing these values
+ */
+
+function personDetails(name, age) {
+  return name + " " + age;
+}
+console.log(personDetails("sama", 20));
+
+/*
+Write a function without parameters that prints "hello" when called
+ */
+
+function sayHello() {
+  console.log("Hello");
+}
+sayHello();
+
+/*
+Write an anonymous function stored in a variable that prints your name when called
+ */
+
+let yourName = function (name) {
+  return name;
+};
+console.log(yourName("Samasemo"));
+
+/*
+Write an arrow function that adds two numbers and returns the result
+ */
+
+let calc = (num1, num2) => {
+  return num1 + num2;
+};
+console.log(calc(5, 15));
+
+/*
+Write a function in JavaScript that checks the value of a given number and returns:
+'Zero'     => number= 0
+'Positive' => number > 0
+'Negative' => number < 0
+ */
+
+function checkForValue(number) {
+  if (number == 0) {
+    return "zero";
+  } else if (number > 0) {
+    return "Positive";
+  } else {
+    return "Negative";
+  }
+}
+console.log(checkForValue(-4));
+
+/*
+Write a function in JavaScript that takes the user's age as input and checks:
+'Adult' => age >= 18
+'Minor' => age < 18
+ */
+
+function checkForAge(age) {
+  if (age >= 18) {
+    return "Adult";
+  } else {
+    return "Minor";
+  }
+}
+console.log(checkForAge(20));
