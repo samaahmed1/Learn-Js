@@ -1,17 +1,17 @@
-/* 
-* Operations:
-* Arithmetic
-* Logical
-* Assignment 
-* Comparison
-*/
+/*
+ * Operations:
+ * Arithmetic
+ * Logical
+ * Assignment
+ * Comparison
+ */
 
 /**********************************/
 // Arithmetic Operations
 /**********************************/
 
 // Binary Operations
-let numberOne = 8; 
+let numberOne = 8;
 let numberTwo = 3;
 
 console.log(numberOne + numberTwo); // 11
@@ -26,15 +26,15 @@ console.log(numberOne++); // 8
 console.log(++numberOne); // 10
 console.log(--numberTwo); // 2
 console.log(numberTwo--); // 2
-console.log(~numberOne);  // -11
+console.log(~numberOne); // -11
 
 let num1 = 5;
 let num2 = 10;
 
 console.log(num1++ + ++num2); // 5 + 11
-console.log(num1 + num2);     // 6 + 11
+console.log(num1 + num2); // 6 + 11
 console.log(--num1 - num2++); // 5 - 11
-console.log(~num2 + ++num1);  // -13 + 6
+console.log(~num2 + ++num1); // -13 + 6
 
 /**********************************/
 // Logical Operations
@@ -49,9 +49,9 @@ console.log(!a); // false
 console.log(!b); // true
 
 // Binary Operations
-console.log(a && b);        // false
-console.log(a || b);        // true
-console.log(a || b && c);   // true && true => true
+console.log(a && b); // false
+console.log(a || b); // true
+console.log(a || (b && c)); // true && true => true
 
 /**********************************/
 // Assignment Operations
@@ -60,21 +60,21 @@ console.log(a || b && c);   // true && true => true
 let d = -6;
 let e = 12;
 
-console.log(d += e); // 6
-console.log(d *= e); // -72
-console.log(d %= e); // 0
+console.log((d += e)); // 6
+console.log((d *= e)); // -72
+console.log((d %= e)); // 0
 
 /**********************************/
 // Comparison Operations
 /**********************************/
 
 let x = 8;
-let y = '8'; 
+let y = "8";
 let z = 10;
 
-console.log(x == y);  // true
+console.log(x == y); // true
 console.log(x === y); // false
-console.log(x != z);  // true
+console.log(x != z); // true
 console.log(x !== y); // true
 
 /**********************************/
@@ -85,12 +85,12 @@ let s = 10;
 let t = 20;
 let u = 0;
 
-console.log(!(s <= t));               // false
-console.log(s < t && s == u);         // false
-console.log(s > t || t > u);          // true
-console.log(s > t || u == 0);         // true
-console.log(u != 0 || t >= 10);       // true
-console.log(s-- > t++ && ++t < --s);  // false
+console.log(!(s <= t)); // false
+console.log(s < t && s == u); // false
+console.log(s > t || t > u); // true
+console.log(s > t || u == 0); // true
+console.log(u != 0 || t >= 10); // true
+console.log(s-- > t++ && ++t < --s); // false
 
 /**********************************/
 // If Statements
@@ -98,10 +98,10 @@ console.log(s-- > t++ && ++t < --s);  // false
 
 // Temperature Check
 /*
-* >30     => Hot
-* 20 : 30 => Mild 
-* <20     => Cold
-*/
+ * >30     => Hot
+ * 20 : 30 => Mild
+ * <20     => Cold
+ */
 
 let temperature = 19;
 
@@ -117,9 +117,9 @@ if (temperature > 30) {
 
 // Day Check
 /*
-* sunday : thursday => work day
-* friday , saturday => holiday
-*/
+ * sunday : thursday => work day
+ * friday , saturday => holiday
+ */
 
 let day = "sunday";
 
@@ -131,9 +131,9 @@ if (day === "friday" || day === "saturday") {
 
 // Number Check
 /*
-* >0 => Positive
-* <0 => Negative
-*/
+ * >0 => Positive
+ * <0 => Negative
+ */
 
 let number = -10;
 
@@ -147,10 +147,10 @@ if (number < 0) {
 
 // Driving Eligibility
 /*
-* age
-* drivinghistory
-* drivingtest
-*/
+ * age
+ * drivinghistory
+ * drivingtest
+ */
 
 let age = 17;
 let drivingHistory = true;
@@ -161,3 +161,171 @@ if (age >= 18 && drivingHistory && drivingTest) {
 } else {
   console.log("Unacceptable");
 }
+
+/**********************************/
+// Switch
+/**********************************/
+
+//  Language Selection
+/*
+ * English => Hello
+ * Arabic  => مرحبًا
+ * Spanish => Hola
+ * French  => Bonjour
+ */
+
+let language = "Arabic";
+switch (language) {
+  case "Arabic":
+    console.log("مرحبًا");
+    break;
+  case "English":
+    console.log("Hello");
+    break;
+  case "Spanish":
+    console.log("Hola");
+    break;
+  case "French":
+    console.log("Bonjour");
+    break;
+  default:
+    console.log("Please Enter a Valid language");
+}
+
+// Bill Calculation
+/*
+ * Cafe       => 40 units
+ * Restaurant => 50 units
+ * Laundry    => 30 units
+ * Delivery   => 20 units
+ */
+
+let serviceType = "Cafe";
+switch (serviceType) {
+  case "Cafe":
+    console.log("40 units");
+    break;
+  case "Restaurant":
+    console.log("50 units");
+    break;
+  case "Laundry":
+    console.log("30 units");
+    break;
+  case "Delivery":
+    console.log("20 units");
+    break;
+  default:
+    console.log("Please Enter a Valid serviceType");
+}
+
+// Student Grades Calculation
+/*
+ * A => Excellent
+ * B => Very Good
+ * c => Good
+ * D => Pass
+ * E => Fail
+ */
+let grade = "A";
+switch (grade) {
+  case "A":
+    console.log("Excellent");
+    break;
+  case "B":
+    console.log("Very Good");
+    break;
+  case "c":
+    console.log("Good");
+    break;
+  case "D":
+    console.log("Pass");
+    break;
+  case "E":
+    console.log("Fail");
+    break;
+  default:
+    console.log("Please Enter a Valid grade");
+}
+
+/**********************************/
+// for Loop
+/**********************************/
+
+// sum of numbers from 1 : 30
+/*
+ * start => 1
+ * end   => 30
+ */
+let num = 0;
+for (let i = 1; i <= 30; i++) {
+  num += i;
+}
+console.log(num);
+
+// even number
+/*
+ * start => 0
+ * end   => 20
+ */
+
+for (let i = 0; i <= 20; i += 2) {
+  console.log(i);
+}
+
+/**********************************/
+// while Loop
+/**********************************/
+
+/*
+Write a program that starts with a specific number and increases it by 1 each
+time until the number is greater than or equal to 10. The program should print
+the number in each iteration.
+ */
+
+let numberFromUser = 5;
+while (numberFromUser <= 10) {
+  console.log(numberFromUser);
+  numberFromUser++;
+}
+
+/*
+Write a program that asks the user to input a number, then calculates the sum of even 
+numbers starting from that number up to 30.
+ */
+
+let input = 28;
+let sum = 0;
+while (input <= 30) {
+  if (input % 2 == 0) {
+    sum += input;
+  }
+  input++;
+}
+console.log(sum);
+
+/**********************************/
+// Do while Loop
+/**********************************/
+
+/*
+Write a program that asks the user to input a word and continues asking for the word until 
+the user enters the word "quit". After each input, print the entered word.
+ */
+
+let word = "quit";
+do {
+  console.log(word);
+} while (word !== "quit");
+
+/*
+Write a program that starts with the number 5, checks if the number is odd, and prints it. After 
+that, increment the number by 1 and terminate the program after executing the process once.
+ */
+
+let i = 5;
+do {
+  if (i % 2 != 0) {
+    console.log(i);
+  }
+  i++;
+} while (i < 5);
