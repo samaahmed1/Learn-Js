@@ -422,3 +422,88 @@ function checkForAge(age) {
   }
 }
 console.log(checkForAge(20));
+
+/**********************************/
+// Object
+/**********************************/
+
+// pc
+/*
+ * brand
+ * processor
+ * storage
+ * ram
+ * gpu
+ * os
+ * color
+ * screenSize
+ * battery
+ * weight
+ */
+
+let pc = {
+  brand: "hp",
+  processor: "Intel i7-10750H",
+  storage: "512GB SSD",
+  ram: "16GB",
+  gpu: "512GB SSD",
+  os: "Windows 10",
+  color: "gray",
+  screenSize: "15.6 inches",
+  battery: "5000mAh",
+  weight: "1.8kg",
+};
+console.log(pc.brand);
+console.log(pc.color);
+
+// pet
+/*
+ * type
+ * name
+ * age
+ * color
+ * gender
+ * height
+ * weight
+ * vaccinations
+ * health
+ */
+
+let pet = {
+  type: "dog",
+  name: "lele",
+  age: "1 year",
+  color: "white",
+  gender: "female",
+  height: "50 cm",
+  weight: "1 kg",
+  vaccinations: "done",
+  health: "good",
+};
+console.log(pet.age);
+console.log(pet.name);
+
+// book
+/*
+ * title
+ * genre
+ * author
+ * pages
+ * price
+ * publish date
+ * rating
+ * language
+ */
+
+let book = {
+  title: "Ekaadoli",
+  genre: "novel",
+  author: "hanan lashin",
+  pages: "385",
+  price: "90",
+  publishDate: "2017",
+  rating: "4.8",
+  language: "arabic",
+};
+console.log(book.author);
+console.log(book.price);
