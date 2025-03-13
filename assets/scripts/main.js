@@ -525,3 +525,19 @@ function convertToNumber(value) {
   return +value;
 }
 console.log(convertToNumber("40"));
+
+//Math.max
+
+function customMax(...value) {
+  let max = value[0];
+
+  for (let i = 1; i < value.length; i++) {
+    if (value[i] > max) {
+      max = value[i];
+    }
+  }
+
+  return max;
+}
+
+console.log(customMax(10, 20, 60)); 
