@@ -518,3 +518,10 @@ function convertToString(value) {
   return value + "";
 }
 console.log(convertToString(10));
+
+//Number
+
+function convertToNumber(value) {
+  return +value;
+}
+console.log(convertToNumber("40"));
