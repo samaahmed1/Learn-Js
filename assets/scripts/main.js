@@ -541,3 +541,19 @@ function customMax(...value) {
 }
 
 console.log(customMax(10, 20, 60)); 
+
+//Math.min
+
+function customMin(...value) {
+  let min = value[0];
+
+  for (let i = 1; i < value.length; i++) {
+    if (value[i] < min) {
+      min = value[i];
+    }
+  }
+
+  return min;
+}
+
+console.log(customMin(0, 20, 60)); 
