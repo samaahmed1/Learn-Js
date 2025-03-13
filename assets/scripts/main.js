@@ -507,3 +507,14 @@ let book = {
 };
 console.log(book.author);
 console.log(book.price);
+
+/**********************************/
+// Implement Number Methods
+/**********************************/
+
+// toString
+
+function convertToString(value) {
+  return value + "";
+}
+console.log(convertToString(10));
